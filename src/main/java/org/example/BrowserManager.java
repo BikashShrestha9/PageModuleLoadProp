@@ -13,6 +13,7 @@ public class BrowserManager extends  Utility {
     //String browser = System.getProperty("browser");
     public void openBrowser (){
         //driver=new ChromeDriver();
+        //checking the browser value passed from test data and opening the browser
         if(browser.equalsIgnoreCase("chrome")){
             System.out.println("Your browser is Chrome");
             driver=new ChromeDriver();
@@ -34,7 +35,7 @@ public class BrowserManager extends  Utility {
         driver.get(loadProperty.getValue("url"));
 
     }
-
+    //closing the browser
     public void closeBrowser(){
         //driver.quit();
     }
