@@ -12,11 +12,13 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
 import java.security.Timestamp;
+import java.sql.Time;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class Utility extends BasePage {
     LoadProperty loadProperty=new LoadProperty();
@@ -105,10 +107,5 @@ public class Utility extends BasePage {
     public String getEmailAddress(){
         return email;
     }
-
-
-
-
-
 
 }
